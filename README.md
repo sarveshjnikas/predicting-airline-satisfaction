@@ -12,8 +12,13 @@
 
 ## Layout
 - `data/`: competition files (not committed).
-- `notebooks/`: your work.
-- `submissions/`: submission CSVs.
+- `models/`: one script per version, `vNN_slug.py` (e.g. `v01_lgbm-baseline.py`).
+- `submissions/`: one file per version, `vNN.csv` (not committed).
+- `experiments.md`: one row per version.
+
+## Versions
+- **One change per version**, built on a named parent.
+- **One ID everywhere:** model `models/v03_target-encoding.py`, submission `submissions/v03.csv`, Kaggle message `v03 | target encoding | CV 0.xxxx`.
 
 ## Get the data (after joining the competition on Kaggle)
 ```bash
